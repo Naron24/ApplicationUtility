@@ -3,7 +3,7 @@
 class IApplication
 {
 public:
-	virtual void Initialize(		) = 0;
+	virtual IInitializer& Initialize() = 0;
 	IApplication();
 	virtual ~IApplication();
 };

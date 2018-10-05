@@ -25,17 +25,20 @@
     <Filter Include="Application\Initializer\Algorythm\Menu">
       <UniqueIdentifier>{c3ec3556-86ff-4960-9981-29017487bd50}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Application\Initializer\Algorythm\Menu\Starter">
-      <UniqueIdentifier>{324cef1e-a189-4e77-9d8c-3b812e5435c0}</UniqueIdentifier>
+    <Filter Include="Application\Initializer\Initializers">
+      <UniqueIdentifier>{e5587da9-5b17-449f-8edd-adb2ac03f985}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Application\Initializer\AlgoInit">
+    <Filter Include="Application\Initializer\Initializers\AlgoInit">
       <UniqueIdentifier>{07592e27-59ec-41bf-b605-46050e745e47}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Application\Initializer\MenuInit">
+    <Filter Include="Application\Initializer\Initializers\AlgoInit\MenuInit">
       <UniqueIdentifier>{08abe69d-fb53-4946-9531-ed490eb5dd2e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Application\Initializer\StarterInit">
-      <UniqueIdentifier>{f812274b-2248-4b0c-bec9-229390b01231}</UniqueIdentifier>
+    <Filter Include="Application\Initializer\Initializers\AlgoInit\MenuInit\Starter">
+      <UniqueIdentifier>{324cef1e-a189-4e77-9d8c-3b812e5435c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer\Initialization">
+      <UniqueIdentifier>{7c4054cf-a026-47c7-9805-1f9375c1a791}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -58,7 +61,13 @@
       <Filter>Application\Initializer\Algorythm\Menu</Filter>
     </ClInclude>
     <ClInclude Include="IStarter.h">
-      <Filter>Application\Initializer\Algorythm\Menu\Starter</Filter>
+      <Filter>Application\Initializer\Initializers\AlgoInit\MenuInit\Starter</Filter>
+    </ClInclude>
+    <ClInclude Include="IMenuInitializer.h">
+      <Filter>Application\Initializer\Initializers\AlgoInit\MenuInit</Filter>
+    </ClInclude>
+    <ClInclude Include="Initialization.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

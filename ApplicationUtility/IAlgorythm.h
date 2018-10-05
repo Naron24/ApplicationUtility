@@ -4,7 +4,7 @@
 class IAlgorythm
 {
 public:
-	virtual IStarter& SetMenu(const IMenu& menu) = 0;
+	virtual void Act() = 0;
 	IAlgorythm();
 	~IAlgorythm();
 };
