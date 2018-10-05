@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{100dac6b-169e-4b4d-91f4-6c7bdc93eaea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer">
+      <UniqueIdentifier>{eca04638-2246-40ee-adf7-18fd8e84fa3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer\Algorythm">
+      <UniqueIdentifier>{3720ff46-8154-4919-b532-b6bce087ccc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer\Algorythm\Menu">
+      <UniqueIdentifier>{c3ec3556-86ff-4960-9981-29017487bd50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer\Algorythm\Menu\Starter">
+      <UniqueIdentifier>{324cef1e-a189-4e77-9d8c-3b812e5435c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer\AlgoInit">
+      <UniqueIdentifier>{07592e27-59ec-41bf-b605-46050e745e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer\MenuInit">
+      <UniqueIdentifier>{08abe69d-fb53-4946-9531-ed490eb5dd2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer\StarterInit">
+      <UniqueIdentifier>{f812274b-2248-4b0c-bec9-229390b01231}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="IInitializer.h">
+      <Filter>Application\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="IAlgorythm.h">
+      <Filter>Application\Initializer\Algorythm</Filter>
+    </ClInclude>
+    <ClInclude Include="IMenu.h">
+      <Filter>Application\Initializer\Algorythm\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="IStarter.h">
+      <Filter>Application\Initializer\Algorythm\Menu\Starter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
