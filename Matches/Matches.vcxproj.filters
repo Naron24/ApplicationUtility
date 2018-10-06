@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{07101183-6748-4057-a3ea-4de6226c7659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Application">
+      <UniqueIdentifier>{2a6e88bc-20f3-4f87-8c1b-97016deb2821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Algo">
+      <UniqueIdentifier>{acaa4388-8b76-4932-992b-7848060dd591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Initializer">
+      <UniqueIdentifier>{52b54b13-08c1-4e97-915c-155e23b2e6b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Menu">
+      <UniqueIdentifier>{5300e6e4-d20c-44d2-adee-94a40c18e395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Starter">
+      <UniqueIdentifier>{ffcb7e9e-6cff-4cc3-9bee-fdcb1ee1bbef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\InitializersForObjects">
+      <UniqueIdentifier>{16154a6f-fa58-420e-ab06-d419b1b90c8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matches.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
