@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="IAlgorythm.h" />
     <ClInclude Include="IApplication.h" />
+    <ClInclude Include="IGenericAlgo.h" />
     <ClInclude Include="IInitializer.h" />
     <ClInclude Include="IMenu.h" />
     <ClInclude Include="IMenuInitializer.h" />

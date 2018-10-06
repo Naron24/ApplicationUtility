@@ -6,18 +6,4 @@ class IInitializer
 {
 public:
 	virtual IMenuInitializer& SetAlgo(const IAlgorythm& algo) = 0;
-	IInitializer();
-	~IInitializer();
 };
-
-
-
-IInitializer::IInitializer()
-{
-	
-}
-
-
-IInitializer::~IInitializer()
-{
-}

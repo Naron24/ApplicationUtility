@@ -40,6 +40,9 @@
     <Filter Include="Application\Initializer\Initialization">
       <UniqueIdentifier>{7c4054cf-a026-47c7-9805-1f9375c1a791}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Application\Initializer\Algorythm\GenericAlgorythm">
+      <UniqueIdentifier>{686f424c-6f8b-4a31-b47f-def1b21379dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -66,8 +69,11 @@
     <ClInclude Include="IMenuInitializer.h">
       <Filter>Application\Initializer\Initializers\AlgoInit\MenuInit</Filter>
     </ClInclude>
+    <ClInclude Include="IGenericAlgo.h">
+      <Filter>Application\Initializer\Algorythm\GenericAlgorythm</Filter>
+    </ClInclude>
     <ClInclude Include="Initialization.h">
-      <Filter>Header Files</Filter>
+      <Filter>Application\Initializer\Initialization</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
