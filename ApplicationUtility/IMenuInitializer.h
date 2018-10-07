@@ -1,7 +1,8 @@
 #pragma once
 #include "IMenu.h"
+#include "IStarter.h"
 class IMenuInitializer
 {
 public:
-	virtual IStarter& SetMenu(const IMenu& menu) = 0;
+	virtual IStarter& SetMenu(IMenu& menu) = 0;
 };

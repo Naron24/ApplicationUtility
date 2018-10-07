@@ -34,13 +34,40 @@
     <Filter Include="Implementation\InitializersForObjects">
       <UniqueIdentifier>{16154a6f-fa58-420e-ab06-d419b1b90c8b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Data">
+      <UniqueIdentifier>{4c0ef957-4ef7-44d4-9ef7-bb3e79a454a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\InitializersForObjects\Menu">
+      <UniqueIdentifier>{87fad653-25ca-4959-b60b-fb52de13144b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\InitializersForObjects\Starter">
+      <UniqueIdentifier>{4f2bf4b6-9099-4452-bb67-9103c7b5fa1d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MatchesAlgo.h">
+      <Filter>Implementation\Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchesData.h">
+      <Filter>Implementation\Data</Filter>
+    </ClInclude>
     <ClInclude Include="ConsoleMenu.h">
-      <Filter>Header Files</Filter>
+      <Filter>Implementation\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchesApplication.h">
+      <Filter>Implementation\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchesInitializer.h">
+      <Filter>Implementation\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchesMenuInitializer.h">
+      <Filter>Implementation\InitializersForObjects\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="StarterMenuInitializer.h">
+      <Filter>Implementation\InitializersForObjects\Starter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -51,7 +78,25 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ConsoleMenu.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Implementation\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchesData.cpp">
+      <Filter>Implementation\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchesAlgo.cpp">
+      <Filter>Implementation\Algo</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchesInitializer.cpp">
+      <Filter>Implementation\Initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchesApplication.cpp">
+      <Filter>Implementation\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchesMenuInitializer.cpp">
+      <Filter>Implementation\InitializersForObjects\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="StarterMenuInitializer.cpp">
+      <Filter>Implementation\InitializersForObjects\Starter</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
