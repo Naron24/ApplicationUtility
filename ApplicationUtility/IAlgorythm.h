@@ -1,7 +1,5 @@
 #pragma once
-#include "IMenu.h"
-#include "IStarter.h"
-
+#include "IData.h"
 ///The basic abstract class to conduct the action of the application
 class IAlgorythm
 {

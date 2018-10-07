@@ -43,6 +43,21 @@
     <Filter Include="Application\Initializer\Algorythm\GenericAlgorythm">
       <UniqueIdentifier>{686f424c-6f8b-4a31-b47f-def1b21379dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Application\Data">
+      <UniqueIdentifier>{f30489c2-47f4-4fca-be21-6b4428c27a4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Initializer\Algorythm\GenericAlgorythm\GenericDataAlgorythm">
+      <UniqueIdentifier>{cc116a7b-cc30-4d48-ac03-a9a6c977515d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Data\GenericData">
+      <UniqueIdentifier>{8bd85a7f-bd62-4c25-b994-90f788a9f1b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Converter">
+      <UniqueIdentifier>{e1c9721d-f263-4328-b391-2d43f231660a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Observer">
+      <UniqueIdentifier>{383eb733-b94f-4c37-9efb-d3d7a6a0d3f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -74,6 +89,21 @@
     </ClInclude>
     <ClInclude Include="Initialization.h">
       <Filter>Application\Initializer\Initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="IData.h">
+      <Filter>Application\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="IGenericDataAlgo.h">
+      <Filter>Application\Initializer\Algorythm\GenericAlgorythm\GenericDataAlgorythm</Filter>
+    </ClInclude>
+    <ClInclude Include="IGenericData.h">
+      <Filter>Application\Data\GenericData</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.h">
+      <Filter>Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Application\Observer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
