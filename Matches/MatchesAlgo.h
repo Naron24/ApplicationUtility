@@ -1,6 +1,6 @@
 #pragma once
 #include "IGenericAlgo.h"
-class MatchesAlgo : IGenericAlgo<int>, IAlgorythm
+class MatchesAlgo : public IGenericAlgo<int>, public IAlgorythm
 {
 	
 public:

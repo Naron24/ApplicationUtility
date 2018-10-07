@@ -1,6 +1,6 @@
 #pragma once
 #include "MatchesAlgo.h"
-class ConsoleMenu : IMenu
+class ConsoleMenu : public IMenu
 {
 private:
 	MatchesAlgo algo;
