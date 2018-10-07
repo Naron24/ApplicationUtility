@@ -1,20 +1,9 @@
 #pragma once
 #include "IAlgorythm.h"
+#include "IMenuInitializer.h"
+/// The abstract class to create the logic of an application
 class IInitializer
 {
 public:
-	virtual IAlgorythm& SetAlgo(const IAlgorythm& algo) = 0;
-	IInitializer();
-	~IInitializer();
+	virtual IMenuInitializer& SetAlgo(const IAlgorythm& algo) = 0;
 };
-
-
-
-IInitializer::IInitializer()
-{
-}
-
-
-IInitializer::~IInitializer()
-{
-}

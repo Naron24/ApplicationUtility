@@ -2,18 +2,7 @@
 class IMenu
 {
 public:
-	virtual void AdditionalDependencies() = 0;
-	IMenu();
-	~IMenu();
+	virtual void Show() = 0;
+protected:
+	virtual void Create() = 0;
 };
-
-
-
-IMenu::IMenu()
-{
-}
-
-
-IMenu::~IMenu()
-{
-}

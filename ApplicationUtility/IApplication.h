@@ -3,18 +3,5 @@
 class IApplication
 {
 public:
-	virtual void Initialize(		) = 0;
-	IApplication();
-	virtual ~IApplication();
+	virtual IInitializer& Initialize() = 0;
 };
-
-
-
-IApplication::IApplication()
-{
-}
-
-
-IApplication::~IApplication()
-{
-}
