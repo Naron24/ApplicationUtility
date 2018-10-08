@@ -8,6 +8,10 @@ using namespace std;
 
 ConsoleMenu::~ConsoleMenu()
 {
+	if (data != nullptr) {
+		delete data;
+		data = nullptr;
+	}
 }
 
 
@@ -16,16 +20,15 @@ void ConsoleMenu::Show()
 	while (true)
 	{
 		int value = 0;
-		cout << "/n/n Hi, there please enter the number of squares you want to create. /n The programm on its turn will create the min number of matches it needs. /n";
-		cin >> value;
-		if (value >= 1 && value <= INT32_MAX) {
-			Update(MatchesData(value).Convert());
-			int result = algo.Act();
+		value = dynamic_cast<IGenericData<int>*>(&GetData())->GetValue();
+		if (value >= 1 && value <= INT32_MAX) {			
+			int result = dynamic_cast<IGenericData<int>*>(&ExtractResult(*data))->GetValue();
 			if (result != 0) {
-				cout << "/n The result is" << result;
+				cout << endl << endl << "The result is " << result;
 				break;
 			}
 			else {
+				cout << "The value is wrong! Please try once more time!";
 				continue;
 			}
 		}
@@ -35,14 +38,19 @@ void ConsoleMenu::Show()
 	}
 }
 
-void ConsoleMenu::Create()
+IData& ConsoleMenu::GetData()
 {
-
+	int value = 0;
+	cout << "Hi, there please enter the number of squares you want to create."
+		<< endl << endl << " The programm on its turn will create the min number of matches it needs."
+		<< endl;
+	cin >> value;
+	SetData(new MatchesData(value));
+	return *dynamic_cast<IData*>(data);
 }
 
-void ConsoleMenu::Update(IData& data)
+IData & ConsoleMenu::ExtractResult(IData & value)
 {
-	IData* dat = &data;
-	int value = Converter<MatchesData, IData>().Convert(dat)->GetValue();
-	algo.SetVars(value);
+	SetData(&algo->Act(value));
+	return *data;
 }

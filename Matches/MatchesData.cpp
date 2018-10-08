@@ -28,12 +28,3 @@ const int MatchesData::GetValue()
 {
 	return args;
 }
-
-IData & MatchesData::Convert()
-{
-	MatchesData *ptr = new MatchesData(this);
-	IData& data = *dynamic_cast<IData*>(ptr);
-	delete ptr;
-	return data;
-	// TODO: insert return statement here
-}

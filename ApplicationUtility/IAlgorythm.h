@@ -4,6 +4,13 @@
 class IAlgorythm
 {
 protected:
+	bool calculated = false;
+	IData* dataAlgo = nullptr;
 public:
-	virtual void Create() = 0;
+	virtual ~IAlgorythm()
+	{
+		dataAlgo = nullptr;
+	}
+	virtual bool GetIfCalculated() = 0;
+	virtual IData& Act(IData& data) = 0;
 };

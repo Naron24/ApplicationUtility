@@ -18,7 +18,7 @@ MatchesMenuInitializer::~MatchesMenuInitializer()
 IStarter & MatchesMenuInitializer::SetMenu(IMenu & menu)
 {
 	observe->SetMenu(&menu);
-	starter = Converter<IStarter, StarterMenuInitializer>().Convert(new StarterMenuInitializer(*observe));
+	starter = dynamic_cast<IStarter*>(new StarterMenuInitializer(*observe));
 	return *starter;
 	// TODO: insert return statement here
 }

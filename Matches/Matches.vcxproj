@@ -155,16 +155,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ConsoleMenu.h" />
+    <ClInclude Include="FactorialData.h" />
+    <ClInclude Include="FactorialMenu.h" />
+    <ClInclude Include="FactroialAlgo.h" />
     <ClInclude Include="MatchesAlgo.h" />
     <ClInclude Include="MatchesApplication.h" />
     <ClInclude Include="MatchesData.h" />
     <ClInclude Include="MatchesInitializer.h" />
+    <ClInclude Include="MatchesMenu.h" />
     <ClInclude Include="MatchesMenuInitializer.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="StarterMenuInitializer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleMenu.cpp" />
+    <ClCompile Include="FactrorialAlgo.cpp" />
     <ClCompile Include="Matches.cpp" />
     <ClCompile Include="MatchesAlgo.cpp" />
     <ClCompile Include="MatchesApplication.cpp" />

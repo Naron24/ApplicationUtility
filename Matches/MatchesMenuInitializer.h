@@ -1,5 +1,5 @@
 #pragma once
-class MatchesMenuInitializer : IMenuInitializer
+class MatchesMenuInitializer : public IMenuInitializer
 {
 private:
 	IStarter* starter;
