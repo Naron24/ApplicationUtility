@@ -1,7 +1,7 @@
 #pragma once
 #include "IGenericData.h"
 #include "IData.h"
-class MatchesData : public IGenericData<int>, public IData 
+class MatchesData : public IGenericData<int>
 {
 private:
 
@@ -24,6 +24,6 @@ public:
 
 	virtual void SetValue(int args) override;
 	virtual const int GetValue() override;
-	virtual IData& Convert();
+	////
 };
 

@@ -18,7 +18,7 @@ MatchesInitializer::~MatchesInitializer()
 IMenuInitializer & MatchesInitializer::SetAlgo(IAlgorythm & algo)
 {
 	observer.SetAlgo(&algo);
-	menuInit = Converter<IMenuInitializer, MatchesMenuInitializer>().Convert(new MatchesMenuInitializer(&observer));
+	menuInit = dynamic_cast<IMenuInitializer*>(new MatchesMenuInitializer(&observer));
 	return *menuInit;
 	// TODO: insert return statement here
 }

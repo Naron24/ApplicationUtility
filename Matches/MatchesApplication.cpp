@@ -18,6 +18,6 @@ MatchesApplication::~MatchesApplication()
 IInitializer & MatchesApplication::Initialize()
 {
 	// TODO: insert return statement here
-	initializer = Converter<IInitializer, MatchesInitializer>().Convert(new MatchesInitializer());
+	initializer = dynamic_cast<IInitializer*>(new MatchesInitializer());
 	return *initializer;
 }

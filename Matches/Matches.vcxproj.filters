@@ -43,6 +43,21 @@
     <Filter Include="Implementation\InitializersForObjects\Starter">
       <UniqueIdentifier>{4f2bf4b6-9099-4452-bb67-9103c7b5fa1d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Algo\Factorial">
+      <UniqueIdentifier>{e3da6db6-cf3e-42c0-9cdd-128f6cd093aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\InitializersForObjects\Menu\FactorialMenu">
+      <UniqueIdentifier>{fd317563-c0fa-4fa8-8d08-597e01ec7df2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Data\Factorial">
+      <UniqueIdentifier>{dc9f9f3a-a1af-4942-939f-c46492935a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Menu\FactorialMenu">
+      <UniqueIdentifier>{f68b45a7-a72a-4bc7-acd4-798fac043404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Menu\MatchesMenu">
+      <UniqueIdentifier>{0060afd4-c027-4bc0-a4dc-90da8522e9bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -68,6 +83,18 @@
     </ClInclude>
     <ClInclude Include="StarterMenuInitializer.h">
       <Filter>Implementation\InitializersForObjects\Starter</Filter>
+    </ClInclude>
+    <ClInclude Include="FactroialAlgo.h">
+      <Filter>Implementation\Algo\Factorial</Filter>
+    </ClInclude>
+    <ClInclude Include="FactorialData.h">
+      <Filter>Implementation\Data\Factorial</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchesMenu.h">
+      <Filter>Implementation\Menu\MatchesMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="FactorialMenu.h">
+      <Filter>Implementation\Menu\FactorialMenu</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +124,9 @@
     </ClCompile>
     <ClCompile Include="StarterMenuInitializer.cpp">
       <Filter>Implementation\InitializersForObjects\Starter</Filter>
+    </ClCompile>
+    <ClCompile Include="FactrorialAlgo.cpp">
+      <Filter>Implementation\Algo\Factorial</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

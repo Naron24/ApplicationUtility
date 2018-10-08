@@ -1,23 +1,29 @@
 #pragma once
-#include "MatchesAlgo.h"
+#include <iostream>
+using namespace std;
 class ConsoleMenu : public IMenu
 {
 private:
-	MatchesAlgo algo;
+	IAlgorythm* algo = nullptr;
+	void SetData(IData* dataToAdd) {
+		data = dataToAdd;
+	}
 public:
-	ConsoleMenu(IAlgorythm* algo)
+	ConsoleMenu(IAlgorythm* algo) : algo(algo)
 	{
-		this->algo = *dynamic_cast<MatchesAlgo*>(algo);
 	}
 	~ConsoleMenu();
 
 	// Inherited via IMenu
 	virtual void Show() override;
 protected:
-	virtual void Create() override;
+	/*virtual bool CheckValue(IData* value) {
+		int value1 = dynamic_cast<IGenericData<int>*>(value)->GetValue();
+		return value1 >= 1 && value1 <= INT64_MAX;
+	}*/
+	IData* data = nullptr;
 
-	// Inherited via IMenu
-	virtual void Update(IData & data) override;
-
+	virtual IData& GetData() override;
+	virtual IData& ExtractResult(IData& value);
 };
 
